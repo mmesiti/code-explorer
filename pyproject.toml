@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "code-explorer"
+version = "0.1.0"
+description = "Tools to quickly get a picture of a codebase"
+authors = ["Michele Mesiti <michele.mesiti@kit.edu>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^1.4.4"
+plotly = "^5.10.0"
+
+[tool.poetry.dev-dependencies]
+ipython = "^8.5.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
