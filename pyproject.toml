@@ -6,7 +6,7 @@ authors = ["Michele Mesiti <michele.mesiti@kit.edu>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-pandas = "^1.4.4"
+pandas = "2.2.3"
 plotly = "^5.10.0"
 
 [tool.poetry.dev-dependencies]
