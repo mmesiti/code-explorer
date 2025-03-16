@@ -8,6 +8,16 @@ like [cloc](https://github.com/AlDanial/cloc),
 [pandas](https://pandas.pydata.org/)
 and [plotly's treemaps](https://plotly.com/python/treemaps/).
 
+Exploring the repo of `numpy`:
+
+![A treemap of the numpy repository at the maintenance/1.22.x branch](./numpy-treemap.png)
+
+Picture produced with the command
+
+```bash
+$ ./explore-driver-web.sh https://github.com/numpy/numpy maintenance/1.22.x
+```
+
 ## Dependencies
 - cloc
 - poetry to manage the python installation (pandas and plotly)
@@ -39,4 +49,4 @@ in the current directory.
 ## Considerations
 - poetry might be overkill
 - it would be nice to click on a file on the treemap and open it,
-  but alas this requires effort
+  but alas this requires effort - done for the web version, difficult for the local one.
