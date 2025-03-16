@@ -18,11 +18,21 @@ After clone
 cd code-explorer
 poetry install
 ```
-And then 
+## Usage
+For local repositories:
 ```bash
 ./explore-driver.sh /path/to/the/repo/to/analyse
 ```
+For repositories on the web, one can use 
+```bash
+./explore-driver-web.sh url-of-repo-to-analyse <branch>
+```
+Where `<branch>` typically means `master` or `main`.
+
 Plotly should open a browser tab showing a treemap that you can explore.
+In the "web" version, the names of files in the treemap will be clickable links
+that should point to the file on the web (tested on github).
+
 An html file ending in `...cloc.db.html` should be created 
 in the current directory.
 
